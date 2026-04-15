@@ -1,5 +1,7 @@
 # Omarchy setup
 
+![screenshot](./screenshot.png)
+
 ## Ghostty
 
 In omarchy menu install the `ghostty` terminal.

@@ -18,19 +18,28 @@ cp neovim-config/init.lua ~/.config/nvim/
 ```bash
 mise use -g odin
 mise use -g opencode
+mise use -g codex
 mise use -g cmake
 mise use -g ninja
 mise use -g typst
 ```
 
-for clang:
+for `t3code`:
+
+```bash
+yay -S t3code-bin
+sudo install -d /opt/t3code-bin/usr/bin
+sudo ln -sfn ../../AppRun /opt/t3code-bin/usr/bin/t3code
+```
+
+for `clang`:
 
 ```bash
 mise settings set experimental true
 mise use -g "conda:clang"
 ```
 
-for swift:
+for `swift`:
 
 ```bash
 sudo pacman -S ncurses
@@ -64,4 +73,6 @@ asusctl slash --mode Static
 
 ## Get helium browser
 
-From AUR install `helium-browser-bin`.
+```bash
+yay -S helium-browser-bin
+```
